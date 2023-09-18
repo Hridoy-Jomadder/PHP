@@ -10,7 +10,7 @@ echo $length;
 
 //User Define Function
 function addTwoNum(){
-    $x=10;
+    $x=50;
     $y=20;
     echo $x+$y;
 }
