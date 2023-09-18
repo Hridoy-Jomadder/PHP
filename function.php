@@ -16,7 +16,17 @@ function addTwoNum(){
 }
 addTwoNum();
 
+<?php
 
+//Function Paramiter pas/input
+function addTwoNum($x,$y){
+
+    echo $x+$y;
+}
+
+addTwoNum(1,0);
+addTwoNum(1,1);
+addTwoNum(1,2);
 
 
 
