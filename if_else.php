@@ -23,3 +23,18 @@ if ($number == 0){
 
     echo"The number $number is odd.";
 }
+
+<?php
+
+$color = "red";
+if($color == "red"){
+    echo "Primary color.";
+}elseif($color == "green"){
+    echo "Secondary color.";
+}elseif($color =="blue"){
+    echo "Primary color.";
+}elseif($color =="yellow"){
+    echo "Primary color.";
+}else{
+    echo "Other Color";
+}
