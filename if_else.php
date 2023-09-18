@@ -38,3 +38,14 @@ if($color == "red"){
 }else{
     echo "Other Color";
 }
+
+<?php
+
+$color = "green";
+if($color == "red" || $color == "blue" || $color =="yellow"){
+    echo "Primary color.";
+}elseif($color =="green" || $color == "orange" || $color == "orange"){
+    echo "Secondary color.";
+}else{
+    echo "Other Color";
+}
