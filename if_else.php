@@ -49,3 +49,12 @@ if($color == "red" || $color == "blue" || $color =="yellow"){
 }else{
     echo "Other Color";
 }
+
+//Ternary Operator
+<?php
+
+$number = 17;
+$remainder = $number % 2;
+$result = ($number == 0) ? "Zero" : (($remainder == 0) ? "Even Number" : "Odd Number");
+
+echo $result;
