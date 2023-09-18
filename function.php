@@ -18,7 +18,7 @@ addTwoNum();
 
 <?php
 
-//Function with Paramiter pas/input
+//Function with Parameter pas/input
 function addTwoNum($x,$y){
     echo $x+$y;
 }
@@ -29,7 +29,7 @@ addTwoNum(1,2);
 
 <?php
 
-//Function Paramiter Default
+//Function Parameter Default
 function addTwoNum($a,$b,$c,$d){
     echo $a+$b+$c+$d;
 }
