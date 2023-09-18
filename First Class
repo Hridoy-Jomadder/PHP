@@ -1,16 +1,8 @@
-Html
-Css 
-Javascript
-Dom
-Ajax
-Es6
-Bootstrap
-Software Engineering
-Software Development Lifecycle
-Project Management
-Software Design
-Php
-
-
+<?php
+//variable
+$a = 10;
+$b = 20;
+$c = $a+$b;
+echo $c= $a+$b;
 
 
