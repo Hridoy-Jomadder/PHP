@@ -20,7 +20,6 @@ addTwoNum();
 
 //Function with Paramiter pas/input
 function addTwoNum($x,$y){
-
     echo $x+$y;
 }
 
