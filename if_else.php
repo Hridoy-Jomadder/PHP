@@ -58,3 +58,41 @@ $remainder = $number % 2;
 $result = ($number == 0) ? "Zero" : (($remainder == 0) ? "Even Number" : "Odd Number");
 
 echo $result;
+
+//
+<?php
+
+$marks = 30;
+
+if($marks >= 90){
+    $result = "A+";
+}elseif($marks >= 80){
+    $result = "A";
+}elseif($marks >= 70){
+    $result = "A-";
+}elseif($marks >= 60){
+    $result = "B";
+}elseif($marks >= 50){
+    $result = "C";
+}elseif($marks >= 40){
+    $result = "D";
+}elseif($marks >= 30){
+    $result = "F";
+}
+echo $result;
+
+
+<?php
+
+$marks = 90;
+
+$result = match($marks){
+    90 => "A+",
+    80 => "A",
+    70 => "A-",
+    60 => "B",
+    50 => "C",
+    40 => "D",
+    default => "F",
+};
+echo $result;
