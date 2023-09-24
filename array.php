@@ -1,3 +1,4 @@
+=============================================Part-1=============================================================
 <?php
 
 //Indexed Arrays
@@ -21,3 +22,14 @@ echo "$array1[$i] <br/>";
 foreach($array1 as $item){
     echo "$item<br/>";
 }
+
+=============================================Part-2=============================================================
+//Associative Array
+//Key=>Value
+
+
+//How to Create
+$person=['first_name'=>"Hridoy", "last_name"=>"Jomadder","e-mail"=>"contacthridoyjomadder@gmail.com"];
+
+//Accessing Values
+echo $person['first_name'];
