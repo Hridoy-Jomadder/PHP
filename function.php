@@ -5,7 +5,7 @@ $x = "Hello Hridoy";
 $length=strlen($x);
 
 echo $length;
-
+=======================================================================================
 <?php
 
 //User Define Function
@@ -15,7 +15,7 @@ function addTwoNum(){
     echo $x+$y;
 }
 addTwoNum();
-
+=========================================================================================
 <?php
 
 //Function with Parameter pas/input
@@ -26,7 +26,7 @@ function addTwoNum($x,$y){
 addTwoNum(1,0);
 addTwoNum(1,1);
 addTwoNum(1,2);
-
+========================================================================================
 <?php
 
 //Function Parameter Default
@@ -35,7 +35,7 @@ function addTwoNum($a,$b,$c,$d){
 }
 
 addTwoNum(1,2,3,4);
-
+=========================================================================================
 
 
 
