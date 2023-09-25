@@ -151,7 +151,60 @@ $portion=array_splice($fruits,0,2);
 print_r($portion);
 
 
-  =============================================Part-5=============================================================
-=============================================Part-6=============================================================
+  ================================================Part-5=============================================================
+<?php
+
+//Array Information Functions
+
+
+//count() - Counts this number of elements in an array.
+$arr=["A","B","C"];
+echo count($arr);
+
+//sizeof() - An alias of count().Also counts the number of elements in an array.
+$arr=["A","B","C","D"];
+echo sizeof($arr);
+
+//array_sum() - Computes the sum of values in array.
+$arr=[1,2,3,4,5,6,7,8];
+$sum=array_sum($arr);
+echo $sum;
+
+
+//array_product() - Computes if a value exists in an array.
+$arr=[1,2,3,4,5,6];
+$product=array_product($arr);
+echo $product;
+
+//in_array() - Checks if a value exists in an array.
+$arr=[1,2,3,4,5,6];
+$check=in_array(3,$arr);
+if ($check){
+    echo "3 found";
+}else{
+    echo "3 not found";
+}
+
+
+
+//is_array() - Checks if a variable is an array.
+$arr=[1,2,3,4,5,6];
+$check=is_array($arr);
+echo $check;
+
+
+//array_key_exists() - Checks if a key exists is an array.
+$person=['First Name'=>"Hridoy", "Last Name"=>"Jomadder","E-mail"=>"contacthridoyjomadder@gmail.com"];
+$check=array_key_exists("E-mail",$person);
+echo $check;
+
+
+
+//array_search() - Searches the array for a given value and returns the first corresponding key.
+$person=['First Name'=>"Hridoy", "Last Name"=>"Jomadder","E-mail"=>"contacthridoyjomadder@gmail.com"];
+$check=array_search("Hridoy",$person);
+echo $check;
+
+ =============================================Part-6=============================================================
 
 
