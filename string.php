@@ -24,11 +24,16 @@ $string = " Hello World";
 echo substr($string,0,5); //hello
 
 //4
-$string = " Hello World";
+//find last characters
+$string = "Hello World";
 $lenght = strlen($string);
 $startingPosition = $lenght - 5;
+echo substr($string,$startingPosition); //hello
 
- echo substr($string,$startingPosition); 
+//smart way
+echo substr($string,- 5);  //World
+
+//5
 
 
 
