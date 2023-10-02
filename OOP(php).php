@@ -1,11 +1,12 @@
 /*===================================================== Part 01 =========================================================*/
-<?php
 /*
 Class & Object
 1. Class a allow developers to encapsulate related data and functions into a single entity.
 2. Making it easier to manage and extend code.
 3. An Object is an instance of a class. You create an object of a class using the new keyword.
 */
+<?php
+
 class OSTAD{
     public $name="PHP BATCH 02";
     public function demo(){
@@ -19,6 +20,11 @@ class OSTAD{
 PHP BATCH 02
 
 /*===================================================== Part 02 =========================================================*/
+/*
+Constructor
+1. Method that gets executed whenever an object is instantiated from a class.
+2. The Constructor method has a magic name: __construct.
+*/
 <?php
 
 class OSTAD{
@@ -68,9 +74,28 @@ $CarObj = new Car("Toyota","Prius","2018");
 $CarObj->MyCar();
 //Output
 My Car name is Toyota, model is Prius & the year is 2018
+/*===================================================== Part 04 =========================================================*/
+<?php
 
+/*
+Inheritance
+1.Inheritance sets up a "like parent, like child" relationship between classes.
+2.Instead of rewriting code, the child class can reuse or change what it gets from the parent.
+3.One class (the child) can use everything from another class(the parent).
+*/
+class father{
+    
+    public function Print100(){
+        for($i=0;$i<=100;$i++){
+            echo "$i+ <br/>";
+        }
+    }
+}
+class Son extends father{
 
-
+}
+$objSon=new Son();
+$objSon->Print100();
 
 
 
