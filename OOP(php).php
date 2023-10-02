@@ -24,10 +24,23 @@ PHP BATCH 02
 class OSTAD{
     
     public function __construct(){
-    echo "Hi,My name is Hridoy Jomadder";
+        echo "Hi,My name is Hridoy Jomadder";
     }
 
  }
 new OSTAD();
 //Output
 Hi,My name is Hridoy Jomadder
+
+<?php
+
+class OSTAD{
+    
+    public function __construct($num1,$num2){
+        echo $num1+$num2;
+    }
+
+ }
+new OSTAD(2,3);
+//Output
+5
