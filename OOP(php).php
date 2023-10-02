@@ -14,4 +14,20 @@ class OSTAD{
 
  }
  $obj=new OSTAD();
-$obj->demo();
+ $obj->demo();
+//Output
+PHP BATCH 02
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+<?php
+
+class OSTAD{
+    
+    public function __construct(){
+    echo "Hi,My name is Hridoy Jomadder";
+    }
+
+ }
+new OSTAD();
+//Output
+Hi,My name is Hridoy Jomadder
