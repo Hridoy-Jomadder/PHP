@@ -97,9 +97,34 @@ class Son extends father{
 $objSon=new Son();
 $objSon->Print100();
 
+//$objfather=new father();
+//$objfather->Print100();
 
 
 
+<?php
+
+/*
+1.Overriding Methods.
+2.Subclasses can override inherited methods from the superclass.
+*/
+class father{
+    
+    public function Print100(){
+        for($i=0;$i<=100;$i++){
+            echo "$i+ <br/>";
+        }
+    }
+}
+class Son extends father{
+    public function Print100(){
+        for($i=0;$i<=80;$i++){
+            echo "$i+ <br/>";
+        }
+    }
+}
+$objSon=new Son();
+$objSon->Print100();
 
 
 
