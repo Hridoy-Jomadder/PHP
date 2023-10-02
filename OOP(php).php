@@ -45,3 +45,55 @@ new OSTAD(2,3);
 //Output
 5
 /*===================================================== Part 03 =========================================================*/
+<?php
+
+class Car{
+    public $name;
+    public $model;
+    public $year;
+
+    public function __construct($nameValue,$modelValue,$yearValue){
+    
+        $this->name=$nameValue;
+        $this->model=$modelValue;
+        $this->year=$yearValue;
+    }
+    
+    public function MyCar(){
+        echo "My Car name is $this->name, model is $this->model & the year is $this->year";
+    }
+ }
+
+$CarObj = new Car("Toyota","Prius","2018");
+$CarObj->MyCar();
+//Output
+My Car name is Toyota, model is Prius & the year is 2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
