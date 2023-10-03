@@ -225,9 +225,7 @@ new Son();
 //Output
 Father Constructor Son Constructor
 
-    
 <?php
-
 /*  
 Parent Keyword:
 1.You can call the parent class's method using the parent keyword.
@@ -243,7 +241,6 @@ class Son extends father{
         parent::Father();
     }
 }
-
 $obj=new Son();
 $obj->Demo();    
 //Output
