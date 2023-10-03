@@ -127,20 +127,105 @@ $objSon=new Son();
 $objSon->Print100();
 
 
+<?php
+
+/*
+1.Overriding Methods.
+2.Subclasses can override inherited methods from the superclass.
+*/
+class father{
+    
+    public function Print100(){
+        for($i=0;$i<=100;$i++){
+            echo "$i+ <br/>";
+        }
+    }
+}
+class Son extends father{
+    public function Print100(){
+        for($i=0;$i<=80;$i++){
+            echo "$i+ <br/>";
+        }
+    }
+}
+$objSon=new Son();
+$objSon->Print100();
+//Output
+01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980
+
+    
+<?php
+
+/*  
+Final keyword:
+1.If you declare a class as final, it means it cannot be extended(inherited).
+2.If you declare a method as final, it means it cannot be overridden by a subclass.
+*/
+final class father{
+    
+   final public function Print100(){
+        for($i=0;$i<=100;$i++){
+            echo "$i+ <br/>";
+        }
+    }
+}
+class Son extends father{
+    public function Print100(){
+        for($i=0;$i<=80;$i++){
+            echo "$i+ <br/>";
+        }
+    }
+}
+//null
 
 
+<?php
 
+/*  
+Abstract Classes:
+1.Abstract Classes cannot be instantiated on their own but can be subclassed.
+*/
+abstract class father{
+    
+    public function Print100(){
+        for($i=0;$i<=100;$i++){
+            echo "$i<br/>";
+        }
+    }
+}
+class Son extends father{
+    public function Print100(){
+        for($i=0;$i<=100;$i++){
+            echo "$i <br/>";
+        }
+    }
+}
+$objSon=new Son();
+$objSon->Print100();
+//Output
+0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100
 
+<?php
 
+/*  
+Constructors and Inheritance:
+1.If a child class has its own Constructor, the parent class's constructor will not be automatically called.
+2.Use parent::__construct() if you want to explicitly call the base class's Constructor.
+*/
+class father{
+    public function __construct(){
+        echo "Father Constructor";
+    }
+}
+class Son extends father{
+    public function __construct(){
+        echo "Son Constructor";
+    }
+}
 
-
-
-
-
-
-
-
-
+new Son();
+//Output
+Son Constructor
 
 
 
