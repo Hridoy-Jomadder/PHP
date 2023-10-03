@@ -256,6 +256,25 @@ Static Properties
 */
 class MyClass{
     
+    public function Hridoy(){
+        echo "My name is Hridoy";
+    }
+}
+$obj=new MyClass();
+$obj->Hridoy();
+//Output
+My name is Hridoy
+
+    
+<?php
+
+/*  
+Static Properties
+1.Static Properties are tied to the class, not an instance of the class.
+2.They can be accessed without creating an instance of the class.
+*/
+class MyClass{
+    
     public static function Hridoy(){
         echo "My name is Hridoy";
     }
