@@ -283,9 +283,23 @@ MyClass::Hridoy();
 //Output
 My name is Hridoy
 
+<?php
+/*  
+Accessing Static properties Inside class Methods
+1.Withing class methods, static properties and methods are accessed using the self keyword .
+*/
+class MyClass{
+    
+    public $Hero="Hridoy Jomadder";
 
-
-
+    public function Student(){
+        echo $this->Hero;
+    }
+}
+$obj=new MyClass();
+$obj->Student();
+//Output
+Hridoy Jomadder
 
 
 
