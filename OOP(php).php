@@ -257,13 +257,13 @@ Static Properties
 class MyClass{
     
     public function Hridoy(){
-        echo "My name is Hridoy";
+        echo "My name is Hridoy Jomadder";
     }
 }
 $obj=new MyClass();
 $obj->Hridoy();
 //Output
-My name is Hridoy
+My name is Hridoy Jomadder
 
     
 <?php
