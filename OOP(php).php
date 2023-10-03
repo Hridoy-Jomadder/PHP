@@ -227,8 +227,50 @@ new Son();
 //Output
 Son Constructor
 
+<?php
 
+/*  
+Constructors and Inheritance:
+1.If a child class has its own Constructor, the parent class's constructor will not be automatically called.
+2.Use parent::__construct() if you want to explicitly call the base class's Constructor.
+*/
+class father{
+    
+    public function __construct(){
+        echo "Father Constructor";
+    }
+}
+class Son extends father{
+    public function __construct(){
+        parent:: __construct();
+        echo "Son Constructor";
+    }
+}
 
-
+new Son();
+//Output
+Father Constructor Son Constructor
 
     
+<?php
+
+/*  
+Parent Keyword:
+1.You can call the parent class's method using the parent keyword.
+*/
+class father{
+    
+    public function Father(){
+        echo "Hello From Father";
+    }
+}
+class Son extends father{
+    public function Demo(){
+        parent::Father();
+    }
+}
+
+$obj=new Son();
+$obj->Demo();    
+//Output
+Hello From Father
