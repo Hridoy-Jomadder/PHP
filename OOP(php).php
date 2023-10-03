@@ -150,8 +150,7 @@ class Son extends father{
         }
     }
 }
-//null
-
+//error
 
 <?php
 
@@ -301,6 +300,21 @@ $obj->Student();
 //Output
 Hridoy Jomadder
 
+/*  
+Accessing Static properties Inside class Methods
+1.Withing class methods, static properties and methods are accessed using the self keyword .
+*/
+class MyClass{
+    
+    public static $Hero="Hridoy";
+
+    public function Student(){
+        echo $this->Hero;
+    }
+}
+$obj=new MyClass();
+$obj->Student();
+//error
 
 
 
