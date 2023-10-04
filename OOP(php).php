@@ -319,8 +319,38 @@ $obj->Student();
 //Output
 Hridoy Jomadder
 
+/*===================================================== Part 06 =========================================================*/
+not work
+<?php
 
+/*  
+Access Modifiers
+Access modifiers control the visibility of class properties and methods.
+1.Public - accessible everywhere
+2.Protected - accessible within the class and its subclasses(inheritance)
+3.Private - accessible only within the class itself   
+*/
+class Fruit{
+    
+    public $color;      //can be accessed 
+    protected $taste;
+    pPrivate $origin;
 
+    public function setTaste($taste){
+       $this->taste = $taste;
+    }
+    
+    public function setOrigin($Origin){
+       $this->taste = $taste;
+    } 
+    
+    public function describe(){
+       $this->taste = $color;
+    }
+}
+
+$obj=new MyClass();
+$obj->Student();
 
 
 
