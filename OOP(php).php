@@ -301,6 +301,11 @@ $obj->Student();
 Hridoy Jomadder
 
 <?php
+/*  
+Static Methods:
+1.Just like static properties, static method are accessed without creating an instance of the .
+2.They are often used as utility functions that do not rely on any instance-specific data.
+*/
 class MyClass{
     
     public static $Hero="Hridoy Jomadder";
