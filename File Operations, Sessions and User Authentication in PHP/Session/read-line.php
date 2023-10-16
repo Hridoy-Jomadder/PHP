@@ -1,4 +1,4 @@
 <?php
 
 //read the file in array
-$line = file
+$line = file("./data.txt");
