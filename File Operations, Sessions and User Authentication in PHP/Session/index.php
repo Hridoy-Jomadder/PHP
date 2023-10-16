@@ -8,6 +8,7 @@ echo"Todays date is ".date('d-m-y');
 Hi, Hridoy
 Todays date is 16-10-23
 */
+
 /*===================================================*/
 // $newName = "Tuba";
 // file_put_contents("./data.txt", $newName);
