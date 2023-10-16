@@ -1,8 +1,8 @@
 <?php
 
 //read the file in array
-$line = file("./data.txt");
+$lines = file("./data.txt");
 echo"<pre>";
-
+print_r($lines);
 echo"</pre>";
 
