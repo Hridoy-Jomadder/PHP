@@ -16,6 +16,7 @@ Todays date is 16-10-23
 // $data = file_get_contents("./data.txt");
 // echo nl2br($data);
 
+
 /*===================================================*/
 $data = file_get_contents("./data.txt");
 //$data = file_get_contents("http://localhost:8000/index.php");
