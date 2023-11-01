@@ -1,0 +1,114 @@
+Question
+
+Task 1:
+
+Write a PHP code to read the content of a text file and display it on the webpage.
+
+Use the following template:
+
+<?php
+
+ 
+
+$file = '{{file_path}}';
+
+ 
+
+// Open the file
+
+
+
+
+// Read the content of the file
+
+
+
+
+// Close the file
+
+
+
+
+// Display the content
+
+
+
+
+?>
+
+
+Task 2: .
+
+Write a PHP code to append new data to an existing text file.
+
+Use the following template:
+
+<?php
+
+ 
+
+$file = '{{file_path}}';
+
+$data = '{{data}}';
+
+ 
+
+// Open the file in append mode
+
+
+
+
+// Write the data to the file
+
+
+
+
+// Close the file
+
+
+
+
+?>
+
+Write your answer here...
+
+
+Task 1:
+<?php
+
+$file = 'file.txt'; 
+
+// Open the file
+$handle = fopen($file, 'r');
+
+// Check if the file was opened successfully
+if ($handle) {
+    // Read the content of the file
+    $content = fread($handle, filesize($file));
+
+    // Close the file
+    fclose($handle);
+
+    // Display the content
+    echo $content;
+} else {
+    echo "Unable to open the file.";
+}
+
+?>
+Task 2: 
+<?php
+
+$file = 'file.txt';
+$data = 'Hello, World!';
+
+// Open the file in append mode
+$file_handle = fopen($file, 'a');
+
+// Write the data to the file
+fwrite($file_handle, $data);
+
+// Close the file
+fclose($file_handle);
+
+?>
