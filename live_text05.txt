@@ -8,8 +8,6 @@ Use the following template:
 
 <?php
 
- 
-
 $file = '{{file_path}}';
 
  
