@@ -11,20 +11,13 @@ Use the following template:
 $file = '{{file_path}}';
 
  
-
 // Open the file
-
-
 
 
 // Read the content of the file
 
 
-
-
 // Close the file
-
-
 
 
 // Display the content
@@ -43,28 +36,16 @@ Use the following template:
 
 <?php
 
- 
-
 $file = '{{file_path}}';
 
 $data = '{{data}}';
 
- 
-
 // Open the file in append mode
-
-
 
 
 // Write the data to the file
 
-
-
-
 // Close the file
-
-
-
 
 ?>
 
