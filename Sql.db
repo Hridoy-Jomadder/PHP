@@ -4,7 +4,7 @@ VARCHAR(255)
 FLOAT/DECIMAL(255)
 TEXT(255)
 DATE(25)
-BOOL BOOLEAN
+BOOL BOOLEAN(255)
 
 Database Name: hridoy
 Table Name: student
