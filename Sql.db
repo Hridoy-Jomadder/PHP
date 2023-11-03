@@ -7,9 +7,15 @@ BOOL BOOLEAN
 
 Database Name: hridoy
 Table Name: student
+
+//Start
+SELECT * FROM student
+
 //Table INSERT INTO
 INSERT INTO 'student'('id','first_name','last_name','department','project_name') VALUES(NULL,'Hridoy','Jomadder','CSE','Star');
 Let's go: Go
+
 //Update 
-UPDATE student SET first_name="Md. Hridoy"
+UPDATE student SET first_name="Md. Hridoy" WHERE id=1
+
 
