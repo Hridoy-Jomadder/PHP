@@ -50,11 +50,6 @@ PHP is a loosely typed language, which means you don't need to declare the data 
 •	Null: Represents a variable with no value.
 
 
-
-
-
-
-
 Variable Types:
 $name = "John Smith";
 $age = 30;
